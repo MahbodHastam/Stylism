@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { GradientText } from 'stylism'
+import { GradientText, ButtonGradient } from 'stylism'
 
 const App = () => {
   return (
@@ -25,7 +25,31 @@ const App = () => {
           Gradient Text without hover
         </GradientText>
       </h1>
-      <hr style={{ width: '100%' }} />
+      {/* <hr style={{ width: '100%' }} /> */}
+      <h1>
+        <ButtonGradient
+          degree={10}
+          startColor="#e2413e"
+          endColor="#ffc107"
+          hasHover
+          transitionTime={400} // ms
+          style={{ padding: '0.5em 1em', borderRadius: '.6rem' }}
+          fontSize={'16pt'}
+        >
+          Gradient Button with hover
+        </ButtonGradient>
+      </h1>
+      <h1>
+        <ButtonGradient
+          degree={10}
+          startColor="#e2413e"
+          endColor="#ffc107"
+          style={{ padding: '0.5em 1em', borderRadius: '.6rem' }}
+          fontSize={'16pt'}
+        >
+          Gradient Button without hover
+        </ButtonGradient>
+      </h1>
     </div>
   )
 }
