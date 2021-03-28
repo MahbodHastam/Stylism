@@ -5,8 +5,7 @@
   "author": "MahbodHastam",
   "license": "MIT",
   "repository": "git://github.com/MahbodHastam/stylism.git",
-  "main": "dist/index.js",
-  "module": "dist/index.modern.js",
+  "main": "src/index.js",
   "source": "src/index.js",
   "engines": {
     "node": ">=10"
