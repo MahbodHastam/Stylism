@@ -1,10 +1,10 @@
-function _interopDefault$1(ex) {
+function _interopDefault(ex) {
   return ex && typeof ex === 'object' && 'default' in ex ? ex['default'] : ex;
 }
 
-var React = _interopDefault$1(require('react'));
+var React = _interopDefault(require('react'));
 
-var styled = _interopDefault$1(require('styled-components'));
+var styled = _interopDefault(require('styled-components'));
 
 function _taggedTemplateLiteralLoose(strings, raw) {
   if (!raw) {
@@ -67,4 +67,4 @@ var ButtonGradient = function ButtonGradient(props) {
 
 exports.ButtonGradient = ButtonGradient;
 exports.GradientText = GradientText;
-//# sourceMappingURL=index.modern.js.map
+//# sourceMappingURL=index.modern.modern.js.map
