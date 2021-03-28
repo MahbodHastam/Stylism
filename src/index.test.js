@@ -1,7 +1,7 @@
-import { ExampleComponent } from '.'
+import { GradientText } from './components/GradientText'
 
-describe('ExampleComponent', () => {
+describe('Gradient Text', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(GradientText)
   })
 })
