@@ -1,13 +1,13 @@
-# stylism
+# Stylism
 
-> blah blah blah
-
-[![NPM](https://img.shields.io/npm/v/stylism.svg)](https://www.npmjs.com/package/stylism) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+> Some styles for you react app
 
 ## Install
 
 ```bash
 npm install --save stylism
+// or
+yarn add stylism
 ```
 
 ## Usage
@@ -15,16 +15,37 @@ npm install --save stylism
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'stylism'
-import 'stylism/dist/index.css'
+import { GradientText } from 'stylism'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return (
+      <div>
+
+        <GradientText
+          degree={10} // Optional - default: 45
+          startColor="#e2413e"
+          endColor="#ffc107"
+          hasHover // Optional - default: no hover
+          transitionTime={400} // ms - Optional
+        >
+          Gradient Text with hover
+        </GradientText>
+
+        <ButtonGradient
+          degree={10} // Optional - default: 45
+          startColor="#e2413e"
+          endColor="#ffc107"
+          hasHover // Optional - default: no hover
+          transitionTime={400} // ms - Optional
+          style={{ padding: '0.5em 1em', borderRadius: '.6rem' }} // Optional
+          fontSize={'16pt'} // Optional
+        >
+          Gradient Button with hover
+        </ButtonGradient>
+
+      </div>
+    )
   }
 }
 ```
-
-## License
-
-MIT © [MahbodHastam](https://github.com/MahbodHastam)
