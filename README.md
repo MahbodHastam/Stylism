@@ -1,6 +1,6 @@
 # Stylism
 
-> Some styles for you react app
+> Some styles for your react app
 
 ## Install
 
