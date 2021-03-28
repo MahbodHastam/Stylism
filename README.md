@@ -15,7 +15,7 @@ yarn add stylism
 ```jsx
 import React, { Component } from 'react'
 
-import { GradientText } from 'stylism'
+import { GradientText, ButtonGradient } from 'stylism'
 
 class Example extends Component {
   render() {
