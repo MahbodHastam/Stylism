@@ -10,7 +10,8 @@ const GradientText = (props) => {
     startColor,
     endColor,
     hasHover,
-    transitionTime
+    transitionTime,
+    fontSize
   } = props
 
   if (!startColor || !endColor)
@@ -30,6 +31,7 @@ const GradientText = (props) => {
 
   const MyStyle = styled.span`
     color: transparent;
+    font-size: ${fontSize || ''};
     background-image: linear-gradient(${degree}deg, ${startColor}, ${endColor});
     background-clip: text;
     background-position: center;
