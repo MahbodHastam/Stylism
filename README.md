@@ -54,3 +54,8 @@ class Example extends Component {
 - [ ] Tooltip
 - [ ] Animate Box
 - [ ] Filter Images
+
+## 👥 Contribute
+1. Fork then Clone your repo
+2. cd to root dir and `yarn start`
+3. change `example/` files and `yarn start` to see your changes
