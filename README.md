@@ -2,7 +2,7 @@
 
 > Some styles for your react app
 
-## Install
+## ⚙️ Install
 
 ```bash
 npm install --save stylism
@@ -10,7 +10,7 @@ npm install --save stylism
 yarn add stylism
 ```
 
-## Usage
+## 🔧 Usage
 
 ```jsx
 import React, { Component } from 'react'
@@ -38,8 +38,8 @@ class Example extends Component {
           endColor="#ffc107"
           hasHover // Optional - default: no hover
           transitionTime={400} // ms - Optional
-          style={{ padding: '0.5em 1em', borderRadius: '.6rem' }} // Optional
-          fontSize={'16pt'} // Optional
+          style={{ padding: '.5em 1em', borderRadius: '.6rem' }} // Optional
+          fontSize="16pt" // Optional
         >
           Gradient Button with hover
         </ButtonGradient>
@@ -49,3 +49,8 @@ class Example extends Component {
   }
 }
 ```
+
+## ✏️ To-do
+- [ ] Tooltip
+- [ ] Animate Box
+- [ ] Filter Images
