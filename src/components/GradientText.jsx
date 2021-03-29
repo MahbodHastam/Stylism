@@ -11,7 +11,8 @@ const GradientText = (props) => {
     endColor,
     hasHover,
     transitionTime,
-    fontSize
+    fontSize,
+    id
   } = props
 
   if (!startColor || !endColor)
@@ -40,7 +41,7 @@ const GradientText = (props) => {
     ${transitionTime ? transitionStyles(transitionTime) : ''}
   `
 
-  return <MyStyle>{children}</MyStyle>
+  return <MyStyle id={id || ''}>{children}</MyStyle>
 }
 
 export default GradientText

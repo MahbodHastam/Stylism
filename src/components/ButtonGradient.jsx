@@ -12,7 +12,8 @@ const ButtonGradient = (props) => {
     hasHover,
     transitionTime,
     fontSize,
-    style
+    style,
+    id
   } = props
 
   if (!startColor || !endColor)
@@ -44,7 +45,7 @@ const ButtonGradient = (props) => {
     ${style || ''}
   `
 
-  return <MyStyle>{children}</MyStyle>
+  return <MyStyle id={id || ''}>{children}</MyStyle>
 }
 
 export default ButtonGradient
