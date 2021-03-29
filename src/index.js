@@ -1,10 +1,7 @@
-function _interopDefault$1(ex) {
-  return ex && typeof ex === 'object' && 'default' in ex ? ex['default'] : ex;
-}
+function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-var React = _interopDefault$1(require('react'));
-
-var styled = _interopDefault$1(require('styled-components'));
+var React = _interopDefault(require('react'));
+var styled = _interopDefault(require('styled-components'));
 
 function _taggedTemplateLiteralLoose(strings, raw) {
   if (!raw) {
@@ -28,7 +25,8 @@ var GradientText = function GradientText(props) {
       startColor = props.startColor,
       endColor = props.endColor,
       hasHover = props.hasHover,
-      transitionTime = props.transitionTime;
+      transitionTime = props.transitionTime,
+      fontSize = props.fontSize;
   if (!startColor || !endColor) logError("'startColor' or 'endColor' cannot be empty!");
   var hoverStyles = "\n    background-position: left;\n    background-size: 200%;\n    :hover {\n      background-position: right;\n    }\n  ";
 
@@ -36,7 +34,7 @@ var GradientText = function GradientText(props) {
     return "\n    transition: all " + time + "ms ease;\n  ";
   };
 
-  var MyStyle = styled.span(_templateObject || (_templateObject = _taggedTemplateLiteralLoose(["\n    color: transparent;\n    background-image: linear-gradient(", "deg, ", ", ", ");\n    background-clip: text;\n    background-position: center;\n    background-size: 100%;\n    ", "\n    ", "\n  "])), degree, startColor, endColor, hasHover ? hoverStyles : '', transitionTime ? transitionStyles(transitionTime) : '');
+  var MyStyle = styled.span(_templateObject || (_templateObject = _taggedTemplateLiteralLoose(["\n    color: transparent;\n    font-size: ", ";\n    background-image: linear-gradient(", "deg, ", ", ", ");\n    background-clip: text;\n    background-position: center;\n    background-size: 100%;\n    ", "\n    ", "\n  "])), fontSize || '', degree, startColor, endColor, hasHover ? hoverStyles : '', transitionTime ? transitionStyles(transitionTime) : '');
   return /*#__PURE__*/React.createElement(MyStyle, null, children);
 };
 

@@ -1,15 +1,12 @@
 {
   "name": "stylism",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Some components for styling your react app",
   "author": "MahbodHastam",
   "license": "MIT",
   "repository": "git://github.com/MahbodHastam/stylism.git",
   "main": "src/index.js",
-  "source": "src/index.js",
-  "engines": {
-    "node": ">=10"
-  },
+  "source": "src/main.js",
   "scripts": {
     "build": "microbundle-crl --no-compress --format modern,cjs",
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
@@ -22,8 +19,12 @@
     "predeploy": "cd example && yarn install && yarn run build",
     "deploy": "gh-pages -d example/build"
   },
+  "engines": {
+    "node": ">=10"
+  },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^16.0.0",
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
