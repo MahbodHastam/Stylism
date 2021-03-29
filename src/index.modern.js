@@ -1,10 +1,10 @@
-function _interopDefault(ex) {
+function _interopDefault$1(ex) {
   return ex && typeof ex === 'object' && 'default' in ex ? ex['default'] : ex;
 }
 
-var React = _interopDefault(require('react'));
+var React = _interopDefault$1(require('react'));
 
-var styled = _interopDefault(require('styled-components'));
+var styled = _interopDefault$1(require('styled-components'));
 
 function _taggedTemplateLiteralLoose(strings, raw) {
   if (!raw) {
