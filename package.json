@@ -1,11 +1,11 @@
 {
   "name": "stylism",
-  "version": "1.0.2",
-  "description": "Some components for styling...",
+  "version": "1.0.3",
+  "description": "Some components for styling your react app",
   "author": "MahbodHastam",
   "license": "MIT",
   "repository": "git://github.com/MahbodHastam/stylism.git",
-  "main": "src/index.modern.js",
+  "main": "src/index.js",
   "source": "src/index.js",
   "engines": {
     "node": ">=10"
