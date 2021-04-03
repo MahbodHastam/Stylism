@@ -24,8 +24,8 @@ class Example extends Component {
 
         <GradientText
           degree={10} // Optional - default: 45
-          startColor="#e2413e"
-          endColor="#ffc107"
+          startColor="#e2413e" // Required
+          endColor="#ffc107" // Required
           hasHover // Optional - default: no hover
           transitionTime={400} // ms - Optional
         >
@@ -34,14 +34,36 @@ class Example extends Component {
 
         <ButtonGradient
           degree={10} // Optional - default: 45
-          startColor="#e2413e"
-          endColor="#ffc107"
+          startColor="#e2413e" // Required
+          endColor="#ffc107" // Required
           hasHover // Optional - default: no hover
           transitionTime={400} // ms - Optional
           style={{ padding: '.5em 1em', borderRadius: '.6rem' }} // Optional
           fontSize="16pt" // Optional
         >
           Gradient Button with hover
+        </ButtonGradient>
+
+        <ButtonGradient
+          startColor="#e2413e"
+          endColor="#ffc107"
+          hasHover
+          transitionTime={100}
+          style={{ padding: '.5em 1em', borderRadius: '.6rem' }}
+          fontSize="16pt"
+          id="tooltip-testing"
+        >
+          Gradient Button + Tooltip
+          <Tooltip
+            text="Hello, World!"
+            parentId="tooltip-testing"
+            fontSize="0.85em"
+            transitionTime={100}
+            position="top"
+            backColor="#fff"
+            textColor="#3d3d3d"
+            hasShadow
+          />
         </ButtonGradient>
 
       </div>
