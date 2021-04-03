@@ -51,7 +51,7 @@ class Example extends Component {
 ```
 
 ## ✏️ To-do
-- [ ] Tooltip
+- [x] Tooltip
 - [ ] Animate Box
 - [ ] Filter Images
 
