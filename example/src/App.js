@@ -52,10 +52,11 @@ const App = () => {
             text="blah blah blah"
             parentId="tooltip-testing"
             fontSize="0.85em"
-            transitionTime={300}
+            transitionTime={100}
             position="top"
-            backColor="rgba(0, 0, 0, .3)"
-            textColor="#fff"
+            backColor="#fff"
+            textColor="#3d3d3d"
+            hasShadow
           />
         </ButtonGradient>
       </h1>

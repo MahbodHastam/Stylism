@@ -10,7 +10,8 @@ const Tooltip = (props) => {
     backColor = 'rgba(0, 0, 0, .5)',
     parentId = null,
     transitionTime = 50,
-    fontSize = '0.75em'
+    fontSize = '0.75em',
+    hasShadow = true
   } = props
 
   if (!text) logError(`'text' cannot be empty!`)
@@ -29,11 +30,13 @@ const Tooltip = (props) => {
     ${position}: -20px;
     opacity: 0;
     visibility: hidden;
-    width: 85%;
+    width: auto;
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
     ${transitionTime ? transitionStyles(transitionTime) : ''}
+    ${hasShadow ? `box-shadow: 0 6px 16px rgba(0, 0, 0, .211);` : ``}
+    white-space: nowrap;
   `
 
   const styleElement = document.createElement('style')
